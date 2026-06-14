@@ -1,0 +1,239 @@
+
+
+.cl-container {
+  padding: 30px;
+  background-color: #F8FAFC;
+  min-height: 100vh;
+}
+
+.cl-banner {
+  background: #0F172A;
+  border-radius: 24px;
+  padding: 40px;
+  color: white;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cl-banner-content h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.cl-banner-content p {
+  color: #94A3B8;
+  font-size: 0.95rem;
+  max-width: 500px;
+}
+
+.cl-banner-nav {
+  display: flex;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 6px;
+  border-radius: 12px;
+  gap: 5px;
+}
+
+.cl-nav-item {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #94A3B8;
+}
+
+.cl-nav-item.active {
+  background: #3B82F6;
+  color: white;
+}
+
+.cl-nav-item:hover:not(.active) {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.cl-filter-bar {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr 1.5fr;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.cl-search-wrapper {
+  position: relative;
+}
+
+.cl-search-input {
+  width: 100%;
+  padding: 15px 15px 15px 45px;
+  border-radius: 12px;
+  border: 1px solid #E2E8F0;
+  background: white;
+  font-size: 0.95rem;
+}
+
+.cl-search-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #94A3B8;
+}
+
+.cl-filter-checkbox {
+  background: white;
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 600;
+  color: #1E293B;
+  cursor: pointer;
+}
+
+.cl-select {
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #E2E8F0;
+  background: white;
+  font-weight: 600;
+  color: #1E293B;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%2394A3B8'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='Wait, I'll use a simpler way for the arrow' /%3E%3C/svg%3E");
+}
+
+.cl-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 25px;
+}
+
+.cl-card {
+  background: white;
+  border-radius: 24px;
+  padding: 30px;
+  border: 1px solid #E2E8F0;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cl-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+}
+
+.cl-card-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.cl-tag {
+  padding: 4px 12px;
+  border-radius: 100px;
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.cl-tag-category {
+  background: #F1F5F9;
+  color: #475569;
+}
+
+.cl-tag-level {
+  background: #0F172A;
+  color: white;
+}
+
+.cl-card-image-box {
+  background: #F8FAFC;
+  border-radius: 16px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.cl-card-image-box svg {
+  font-size: 5rem;
+  color: #E2E8F0;
+}
+
+.cl-free-badge {
+  position: absolute;
+  bottom: -15px;
+  right: 20px;
+  background: #10B981;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: 900;
+  border: 4px solid white;
+}
+
+.cl-card-title {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #0F172A;
+  margin-bottom: 10px;
+}
+
+.cl-card-instructor {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #64748B;
+  font-size: 0.85rem;
+  margin-bottom: 25px;
+}
+
+.cl-resume-btn {
+  width: 100%;
+  background: #0F172A;
+  color: white;
+  padding: 15px;
+  border-radius: 14px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+
+.cl-resume-btn:hover {
+  background: #1E293B;
+}
+
+.cl-rate-link {
+  color: #F59E0B;
+  font-size: 0.9rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
+}

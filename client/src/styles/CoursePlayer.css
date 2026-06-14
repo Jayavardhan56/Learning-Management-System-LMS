@@ -1,0 +1,157 @@
+.cp-player-layout {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  height: calc(100vh - 70px);
+  background: #f8fafc;
+}
+
+.cp-main-player {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: white;
+}
+
+.cp-content-area {
+  flex: 1;
+  background: white;
+  overflow: hidden;
+  position: relative;
+}
+
+.cp-bottom-bar {
+  height: 80px;
+  background: #1e293b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  color: white;
+}
+
+.cp-lesson-info h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.cp-lesson-info p {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  margin-top: 4px;
+}
+
+.cp-mark-btn {
+  background: #334155;
+  color: white;
+  border: 1px solid #475569;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.cp-mark-btn:hover {
+  background: #475569;
+}
+
+.cp-mark-btn.completed {
+  background: #059669;
+  border-color: #10b981;
+}
+
+.cp-sidebar {
+  background: #1e293b;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #334155;
+}
+
+.cp-sidebar-header {
+  padding: 20px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #334155;
+}
+
+.cp-content-list {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.cp-sidebar-item {
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  border-bottom: 1px solid #334155;
+  transition: background 0.2s;
+}
+
+.cp-sidebar-item:hover {
+  background: #334155;
+}
+
+.cp-sidebar-item.active {
+  background: #334155;
+  border-left: 4px solid #6366f1;
+}
+
+.cp-item-status {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid #475569;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cp-item-status.done {
+  background: #6366f1;
+  border-color: #6366f1;
+}
+
+.cp-sidebar-footer {
+  padding: 20px;
+  background: #0f172a;
+  border-top: 1px solid #334155;
+}
+
+.cp-progress-tracker {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.cp-tracker-title {
+  font-size: 0.65rem;
+  font-weight: 800;
+  color: #94a3b8;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.cp-exam-btn {
+  width: 100%;
+  background: white;
+  color: #1e293b;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.cp-exam-btn:hover {
+  transform: translateY(-2px);
+}
+

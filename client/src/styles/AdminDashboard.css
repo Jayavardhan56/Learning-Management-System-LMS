@@ -1,0 +1,119 @@
+
+
+.ad-analytics-overview {
+  padding: 20px;
+}
+
+.ad-welcome-banner {
+  background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+  border-radius: 32px;
+  padding: 50px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 40px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ad-welcome-banner::after {
+  content: '';
+  position: absolute;
+  top: -20%;
+  right: -10%;
+  width: 400px;
+  height: 400px;
+  background: rgba(59, 130, 246, 0.1);
+  filter: blur(100px);
+  border-radius: 50%;
+}
+
+.ad-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+.ad-stat-card-premium {
+  background: white;
+  border-radius: 28px;
+  padding: 35px;
+  border: 1px solid #E2E8F0;
+  transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.ad-stat-card-premium:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 40px 80px -20px rgba(0, 0, 0, 0.1);
+  border-color: #3B82F6;
+}
+
+.ad-stat-icon-box {
+  width: 60px;
+  height: 60px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.ad-stat-label {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: #64748B;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.ad-stat-value {
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: #0F172A;
+  line-height: 1;
+}
+
+.ad-quick-actions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.ad-action-card {
+  background: white;
+  border-radius: 24px;
+  padding: 30px;
+  border: 1px solid #E2E8F0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.ad-action-card:hover {
+  background: #F8FAFC;
+  border-color: #3B82F6;
+  transform: scale(1.03);
+}
+
+.ad-action-icon {
+  width: 50px;
+  height: 50px;
+  background: #EFF6FF;
+  color: #3B82F6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}

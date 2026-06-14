@@ -1,0 +1,113 @@
+
+
+.id-analytics-overview {
+  padding: 20px;
+}
+
+.id-welcome-banner {
+  background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+  border-radius: 40px;
+  padding: 60px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 40px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
+}
+
+.id-welcome-banner::after {
+  content: '';
+  position: absolute;
+  top: -10%;
+  right: -5%;
+  width: 450px;
+  height: 450px;
+  background: rgba(99, 102, 241, 0.15);
+  filter: blur(120px);
+  border-radius: 50%;
+}
+
+.id-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.id-stat-card-premium {
+  background: white;
+  border-radius: 35px;
+  padding: 40px;
+  border: 1px solid #E2E8F0;
+  transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.id-stat-card-premium:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 40px 80px -20px rgba(0, 0, 0, 0.12);
+  border-color: #3B82F6;
+}
+
+.id-stat-icon-box {
+  width: 70px;
+  height: 70px;
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+}
+
+.id-content-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 40px;
+}
+
+.id-launch-card {
+  background: #fff;
+  border: 3px dashed #E2E8F0;
+  border-radius: 40px;
+  padding: 80px 40px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.id-launch-card:hover {
+  border-color: #3B82F6;
+  background: #F8FAFC;
+  transform: translateY(-10px);
+}
+
+.id-pipeline-card {
+  background: white;
+  border-radius: 40px;
+  padding: 40px;
+  border: 1px solid #E2E8F0;
+}
+
+.id-pipeline-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  background: #F8FAFC;
+  border-radius: 25px;
+  border: 1px solid #F1F5F9;
+  margin-bottom: 15px;
+  transition: all 0.2s ease;
+}
+
+.id-pipeline-item:hover {
+  background: white;
+  border-color: #3B82F6;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}

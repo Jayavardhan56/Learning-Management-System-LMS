@@ -1,0 +1,119 @@
+.role-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f9fafb;
+}
+.role-container {
+  width: 85%;
+  max-width: 1200px;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  text-align: center;
+}
+.role-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-top: 30px;
+}
+.role-card {
+  padding: 25px;
+  border-radius: 15px;
+  background: #f9fafb;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.role-card:hover {
+  transform: translateY(-8px);
+  background: #ffffff;
+}
+.role-icon {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+.role-card h3 {
+  margin: 10px 0;
+}
+.role-card p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+.role-card button {
+  background: black;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+.role-card button:hover {
+  background: #222;
+}
+.auth-page {
+  height: 100vh;
+  display: flex;
+  background: linear-gradient(to right, #f9fafb, #eef2f7);
+}
+.auth-left {
+  flex: 1;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.auth-left h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #111827;
+}
+.auth-left p {
+  margin-top: 20px;
+  color: #6b7280;
+  max-width: 500px;
+}
+.auth-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.auth-box {
+  width: 380px;
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+.auth-box input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+.auth-box button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background: #020617;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.auth-box button:hover {
+  background: #111827;
+}
+.auth-link {
+  margin-top: 15px;
+  text-align: center;
+  color: #2563eb;
+  cursor: pointer;
+}

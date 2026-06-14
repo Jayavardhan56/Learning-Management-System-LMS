@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600;700;800&display=swap');
+
+.ct-cert-container {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  min-height: 90vh;
+  background: #f8fafc;
+}
+
+.ct-cert-paper {
+  width: 1050px;
+  height: 740px;
+  background: white;
+  position: relative;
+  box-shadow: 0 50px 100px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+}
+
+.ct-cert-paper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  background: #1e3a8a;
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+  z-index: 1;
+}
+
+.ct-cert-paper::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 150px;
+  height: 150px;
+  background: #1e3a8a;
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+  z-index: 1;
+}
+
+.ct-cert-blue-border {
+  height: 100%;
+  width: 100%;
+  border: 15px solid #1e3a8a;
+  box-sizing: border-box;
+  padding: 20px;
+  position: relative;
+  z-index: 2;
+  background: white;
+}
+
+.ct-cert-inner-content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.ct-cert-header-meta {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 0px;
+}
+
+.ct-cert-id-badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #64748b;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.ct-cert-qr-top {
+  width: 70px;
+  height: 70px;
+  background: white;
+  padding: 5px;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 5px;
+}
+
+.ct-cert-logo-main {
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.ct-cert-title-primary {
+  font-family: 'Inter', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: #1e293b;
+  margin: 5px 0;
+  letter-spacing: -1px;
+}
+
+.ct-cert-sub-text {
+  font-size: 1rem;
+  color: #64748b;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.ct-cert-recipient-name {
+  font-size: 3.2rem;
+  color: #10b981;
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  margin: 5px 0;
+  border-bottom: 2px solid #10b981;
+  padding: 0 60px 10px 60px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.ct-cert-body-text {
+  font-size: 1rem;
+  color: #475569;
+  max-width: 700px;
+  line-height: 1.5;
+  margin: 20px 0;
+}
+
+.ct-cert-course-name {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #1e3a8a;
+  margin: 5px 0;
+  text-transform: uppercase;
+}
+
+.ct-cert-issue-date {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #94a3b8;
+  margin-top: 10px;
+}
+
+.ct-cert-footer-layout {
+  width: 100%;
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 60px 40px 60px;
+}
+
+.ct-cert-footer-left {
+  text-align: left;
+}
+
+.ct-cert-nasscom {
+  font-weight: 900;
+  color: #b91c1c;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+.ct-cert-member {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #94a3b8;
+  letter-spacing: 2px;
+}
+
+.ct-cert-footer-right {
+  text-align: center;
+  width: 250px;
+}
+
+.ct-cert-signature-line {
+  border-top: 1px solid #475569;
+  padding-top: 10px;
+  position: relative;
+}
+
+.ct-cert-mock-signature {
+  font-family: 'Dancing Script', 'Brush Script MT', cursive;
+  font-size: 2rem;
+  color: #1e3a8a;
+  transform: translateY(-5px);
+  height: 45px;
+  line-height: 1;
+}
+
+.ct-cert-auth-title {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #1e293b;
+  text-transform: uppercase;
+}
+
+.ct-cert-dir-info {
+  font-size: 0.7rem;
+  color: #64748b;
+  font-weight: 600;
+}
+
+@media print {
+  .no-print { display: none !important; }
+  body { margin: 0; padding: 0; }
+  .ct-cert-container { padding: 0; background: white; min-height: auto; }
+  .ct-cert-paper { box-shadow: none; border: none; }
+}
+

@@ -1,0 +1,111 @@
+
+
+.mg-container {
+  padding: 20px;
+}
+
+.mg-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.mg-title-h2 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #0F172A;
+  letter-spacing: -0.5px;
+}
+
+.mg-subtitle {
+  color: #64748B;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.mg-table-card {
+  background: white;
+  border-radius: 32px;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.mg-user-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.mg-user-table th {
+  background: #F8FAFC;
+  padding: 20px 30px;
+  text-align: left;
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #64748B;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #E2E8F0;
+}
+
+.mg-user-table td {
+  padding: 25px 30px;
+  border-bottom: 1px solid #F1F5F9;
+  font-size: 0.95rem;
+  color: #1E293B;
+  vertical-align: middle;
+}
+
+.mg-user-table tr:last-child td {
+  border-bottom: none;
+}
+
+.mg-user-table tr:hover td {
+  background: #F8FAFC;
+}
+
+.mg-badge {
+  padding: 6px 12px;
+  border-radius: 100px;
+  font-size: 0.7rem;
+  font-weight: 800;
+  display: inline-block;
+}
+
+.mg-badge-student { background: #DBEAFE; color: #1E40AF; }
+.mg-badge-instructor { background: #F3E8FF; color: #6B21A8; }
+.mg-badge-manager { background: #D1FAE5; color: #065F46; }
+.mg-badge-admin { background: #FEE2E2; color: #991B1B; }
+
+.mg-action-btn {
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mg-btn-approve {
+  background: #10B981;
+  color: white;
+}
+
+.mg-btn-approve:hover {
+  background: #059669;
+  transform: translateY(-2px);
+}
+
+.mg-btn-view {
+  background: #EFF6FF;
+  color: #3B82F6;
+}
+
+.mg-btn-view:hover {
+  background: #DBEAFE;
+}

@@ -1,0 +1,16 @@
+FROM node:20-alpine
+
+WORKDIR /app
+
+# Copy package files from the server directory
+COPY server/package*.json ./
+
+RUN npm install
+
+# Copy all server source code
+COPY server/ ./
+
+# Expose backend port
+EXPOSE 5000
+
+CMD ["node", "server.js"]
