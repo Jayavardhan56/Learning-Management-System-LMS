@@ -274,10 +274,12 @@ Professional Certification Programs
 
 Online Learning Communities
 
-OPEN FOR PULL REQUESTS
-
 Enterprise Training Solutions
 
 🌟 SHNOOR LMS
 
 Empowering Learning • Enabling Growth • Building Futures 🚀
+
+OPEN FOR PULL REQUESTS
+
+THIS SYSTEM IS STILL UNDER DEVELOPMENT STAGE!
